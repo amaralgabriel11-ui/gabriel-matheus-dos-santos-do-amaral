@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominando o VS Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">CodeMaster_</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#atalhos">Atalhos</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Alternar Tema</button>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Eleve seu código ao próximo nível</h1>
+            <p>Descubra o poder do editor de código mais popular do mundo. Produtividade, customização e velocidade em um só lugar.</p>
+            <a href="#recursos" class="btn-primary">Explorar Recursos</a>
+        </div>
+    </section>
+
+    <section id="recursos" class="features">
+        <h2>Por que usar o VS Code?</h2>
+        <div class="cards-container">
+            <div class="card" onclick="mostrarDetalhes('extensoes')">
+                <h3>🧩 Extensões</h3>
+                <p>Milhares de plugins para personalizar seu fluxo de trabalho.</p>
+            </div>
+            <div class="card" onclick="mostrarDetalhes('git')">
+                <h3>🐙 Git Integrado</h3>
+                <p>Faça commits, pushes e gerencie branches sem sair do editor.</p>
+            </div>
+            <div class="card" onclick="mostrarDetalhes('terminal')">
+                <h3>💻 Terminal</h3>
+                <p>Acesse o prompt de comando diretamente na interface.</p>
+            </div>
+        </div>
+        <div id="painel-detalhes" class="detalhes-escondido">
+            <p id="texto-detalhe">Clique em um dos cards acima para saber mais!</p>
+        </div>
+    </section>
+
+    <section id="atalhos" class="shortcuts">
+        <h2>Atalhos Salvadores de Vidas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ação</th>
+                    <th>Windows/Linux</th>
+                    <th>Mac</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paleta de Comandos</td>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd></td>
+                    <td><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd></td>
+                </tr>
+                <tr>
+                    <td>Multi-cursor</td>
+                    <td><kbd>Alt</kbd> + Clique</td>
+                    <td><kbd>Opt</kbd> + Clique</td>
+                </tr>
+                <tr>
+                    <td>Abrir Terminal</td>
+                    <td><kbd>Ctrl</kbd> + <kbd>`</kbd></td>
+                    <td><kbd>Ctrl</kbd> + <kbd>`</kbd></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        
